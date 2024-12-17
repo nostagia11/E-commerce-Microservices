@@ -1,9 +1,9 @@
-package com.eprit.productservice.Service;
+package com.eprit.ecommerce.Service;
 
-import com.eprit.productservice.Model.Product;
-import com.eprit.productservice.Repository.ProductRepository;
-import com.eprit.productservice.dto.ProductRequest;
-import com.eprit.productservice.dto.ProductResponse;
+import com.eprit.ecommerce.Model.Product;
+import com.eprit.ecommerce.Repository.ProductRepository;
+import com.eprit.ecommerce.dto.ProductRequest;
+import com.eprit.ecommerce.dto.ProductResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

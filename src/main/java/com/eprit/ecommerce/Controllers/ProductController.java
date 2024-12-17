@@ -1,9 +1,9 @@
-package com.eprit.productservice.Controllers;
+package com.eprit.ecommerce.Controllers;
 
 
-import com.eprit.productservice.Service.ProductService;
-import com.eprit.productservice.dto.ProductRequest;
-import com.eprit.productservice.dto.ProductResponse;
+import com.eprit.ecommerce.Service.ProductService;
+import com.eprit.ecommerce.dto.ProductRequest;
+import com.eprit.ecommerce.dto.ProductResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

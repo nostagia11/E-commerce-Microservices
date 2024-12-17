@@ -1,4 +1,4 @@
-package com.eprit.productservice;
+package com.eprit.ecommerce;
 
 import org.hamcrest.Matchers;
 import org.junit.BeforeClass;
@@ -12,19 +12,17 @@ import org.springframework.context.annotation.Import;
 import org.testcontainers.containers.MongoDBContainer;
 import io.restassured.RestAssured;
 
-import java.util.regex.Matcher;
-
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class ProductServiceApplicationTests {
 
     @ServiceConnection
-    static MongoDBContainer mongoDBContainer = new MongoDBContainer("mongo: 7.0.5");
+    static MongoDBContainer mongoDBContainer = new MongoDBContainer("mongo");
     @LocalServerPort
     private Integer port;
 
     @BeforeEach
-    void setup(){
+    void setup() {
         RestAssured.baseURI = "http://localhost";
         RestAssured.port = port;
 
@@ -40,7 +38,7 @@ class ProductServiceApplicationTests {
                 "name" : "Spring Batch",
                 "description" : "Oreilly book about spring batch",
                 "price" : "200"
-                
+                                
                 """;
         RestAssured.given()
                 .contentType("Application/json")
@@ -53,7 +51,7 @@ class ProductServiceApplicationTests {
                 .body("name", Matchers.equalTo("Spring Batch"))
                 .body("description", Matchers.equalTo("Oreilly book about spring batch"))
                 .body("price", Matchers.equalTo(200))
-                 ;
+        ;
     }
 
 }

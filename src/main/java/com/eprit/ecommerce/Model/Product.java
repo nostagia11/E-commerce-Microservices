@@ -1,4 +1,4 @@
-package com.eprit.productservice.Model;
+package com.eprit.ecommerce.Model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

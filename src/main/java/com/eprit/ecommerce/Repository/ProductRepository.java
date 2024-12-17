@@ -1,7 +1,7 @@
-package com.eprit.productservice.Repository;
+package com.eprit.ecommerce.Repository;
 
 
-import com.eprit.productservice.Model.Product;
+import com.eprit.ecommerce.Model.Product;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 public interface ProductRepository extends MongoRepository<Product, String> {
